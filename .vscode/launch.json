@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TimeQuery",
+            "request": "launch",
+            "mainClass": "net.munki.play.nio.TimeQuery",
+            "projectName": "test"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NonBlockingTimeServer",
+            "request": "launch",
+            "mainClass": "net.munki.play.nio.NonBlockingTimeServer",
+            "projectName": "test"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SimpleAsynchConsumer",
+            "request": "launch",
+            "mainClass": "net.munki.play.jms.SimpleAsynchConsumer",
+            "projectName": "test"
+        }
+    ]
+}
