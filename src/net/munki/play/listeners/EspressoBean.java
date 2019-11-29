@@ -4,27 +4,27 @@ import java.beans.*;
 
 public class EspressoBean {
     private int strength = 90;
-    private PropertyChangeSupport pcs =
+    private final PropertyChangeSupport pcs =
         new PropertyChangeSupport(this);
 
     public int getStrength() {
         return strength;
     }
     
-    public void setStrength(int s) {
-        int oldStrength = strength;
+    public void setStrength(final int s) {
+        final int oldStrength = strength;
         strength = s;
         pcs.firePropertyChange("strength",
                                    oldStrength, s);
     }
 
     public void
-    addPropertyChangeListener(PropertyChangeListener listener) {
+    addPropertyChangeListener(final PropertyChangeListener listener) {
         pcs.addPropertyChangeListener(listener);
     }
     
     public void
-    removePropertyChangeListener(PropertyChangeListener listener) {
+    removePropertyChangeListener(final PropertyChangeListener listener) {
         pcs.removePropertyChangeListener(listener);
     }
 }
