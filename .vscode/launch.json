@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EspressoDemo",
+            "request": "launch",
+            "mainClass": "net.munki.play.listeners.EspressoDemo",
+            "projectName": "test"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TimeQuery",
             "request": "launch",
             "mainClass": "net.munki.play.nio.TimeQuery",

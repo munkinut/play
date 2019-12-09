@@ -6,3 +6,4 @@
 /.classpath
 /*.jar
 /.vscode/
+.vscode/launch.json
